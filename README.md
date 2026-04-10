@@ -46,7 +46,8 @@ Extract the zip files inside the `transformers/` directory:
 
 ```bash
 cd transformers
-unzip "*.zip"
+cat tsfm.z01 tsfm.z02 tsfm.zip >combined.zip
+unzip combined.zip
 ```
 
 ---
