@@ -42,12 +42,10 @@ UniOrd-VLM/
 
 ## 3. Transformers Setup
 We modified the modeling files under `transformers/models/qwen2_5_vl/` to support our proposed method.
-Extract the zip files inside the `transformers/` directory:
+Extract the files inside the `transformers/` directory:
 
 ```bash
-cd transformers
-cat tsfm.z01 tsfm.z02 tsfm.zip >combined.zip
-unzip combined.zip
+tar -xJf transformers/tsfm.tar.xz -C transformers
 ```
 
 ---
