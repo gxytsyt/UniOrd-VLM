@@ -20,7 +20,7 @@ CUDA_VISIBLE_DEVICES=2,3,4,5 llamafactory-cli train \
     --lora_target q_proj,k_proj,v_proj,o_proj \
     --freeze_vision_tower \
     --freeze_multi_modal_projector \
-    --dataset recipe_my_train,wikihow_video_my_train,nips_my_train \
+    --dataset wikihow_video_my_train_t,wikihow_video_my_train_v,wikihow_video_my_train,recipe_my_train_t,recipe_my_train_i,recipe_my_train,wikihow_my_train_t,wikihow_my_train,wikihow_my_train_i,roc_my_train,aan_my_train,arxiv_my_train,nips_my_train \
     --eval_dataset recipe_my_test \
     --template qwen2_vl \
     --media_dir /workspace \
@@ -50,5 +50,4 @@ CUDA_VISIBLE_DEVICES=2,3,4,5 llamafactory-cli train \
     --bf16 \
     --ddp_timeout 180000000 \
     --deepspeed examples/deepspeed/ds_z3_config.json \
-#--dataset wikihow_video_my_train_t,wikihow_video_my_train_v,wikihow_video_my_train,recipe_my_train_t,recipe_my_train_i,recipe_my_train,wikihow_my_train_t,wikihow_my_train,wikihow_my_train_i,roc_my_train,aan_my_train,arxiv_my_train,nips_my_train \
 
