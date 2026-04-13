@@ -13,7 +13,6 @@ echo "$(date)" >> ${RESULTS_SUMMARY}
 echo "==========================================" >> ${RESULTS_SUMMARY}
 echo "" >> ${RESULTS_SUMMARY}
 
-# 循环测试每个 checkpoint
 for CKPT in "${CHECKPOINTS[@]}"; do
     echo ""
     echo "=================================================="
